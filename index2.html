@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoMarket</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="Caja">
+        <!-- Encabezado -->
+        <header>
+            <img id="Logo" src="logtipo.png" alt="Logo de la Empresa." width="150" height="140">
+            <form id="Formulario" action="/buscar" method="post">
+                <input type="text" name="busqueda" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+            </form>
+        </header>
+        
+        <!-- Contenido principal -->
+        <main>
+            <div class="descripcion-imagen">
+                <!-- Detalles del producto -->
+                <div class="product-details">
+                    <h2>Notebook Acer Aspire 3</h2>
+                    <h3>Descripción:</h3>
+                    <ul>
+                        <li>Procesador Intel Core i7.</li>
+                        <li>Memoria RAM 64GB.</li>
+                        <li>Pantalla HD de 15.6".</li>
+                        <li>Resolución de 1920x1080 px.</li>
+                        <li>Es Antirreflejo.</li>
+                    </ul>
+                    <p>Precio: $999</p>
+                    <a href="https://www.acer.com/ar-es/" target="_blank">Sitio web del fabricante</a>
+                </div>
+                    <!-- Carrusel de imagenes -->
+                <div class="Imagen">
+                    <img src="notebook6.webp" alt="Notebook Acer Aspire 3" width="100" height="100">
+                    <img src="notebook.webp" alt="Notebook Acer Aspire 3" width="200" height="100">
+                    <img src="notebook2.webp" alt="Notebook Acer Aspire 3" width="200" height="100">
+                    <img src="notebook3.webp" alt="Notebook Acer Aspire 3" width="200" height="100">
+                    <img src="notebook5.webp" alt="Notebook Acer Aspire 3" width="200" height="100">
+                </div>
+               
+            </div>
+            
+            <!-- Sección de comentarios -->
+            <div class="comments">
+                <h3>Comentarios</h3>
+                <!-- Aquí irían los comentarios si se implementan -->
+                <!-- Formulario para ingresar un comentario -->
+                <form action="#" method="post">
+                    <label for="rating">Calificación (1 al 5):</label>
+                    <input type="number" id="rating" name="rating" min="1" max="5" required><br><br>
+                    <label for="comment">Comentario:</label><br><br>
+                    <textarea id="comment" name="comment" rows="4" required></textarea>
+                    <button type="submit">Enviar comentario</button>
+                </form>
+            </div>
+        </main>
+        
+        <!-- Pie de página -->
+        <footer>
+            <p>&copy; 2024 TecnoMarket</p>
+        </footer>
+    </div> <!-- Cierre de la caja -->
+</body>
+</html>
