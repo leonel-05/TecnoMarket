@@ -29,27 +29,29 @@ header {
     margin-top: 10px;
 }
 
-/* Estilos de la descripción e imagen */
+
 .descripcion-imagen {
-    overflow: auto; /* Limpiar los flotantes */
+    overflow: auto; 
 }
 
 .product-details {
-    float: right; /* Posicionar la descripción a la derecha */
-    width: 50%; /* Ocupar la mitad del ancho */
-    padding-left: 20px; /* Espacio entre la imagen y la descripción */
-    box-sizing: border-box; /* Incluir el padding en el ancho */
+    float: right;
+    width: 45%; 
+    padding-left: 5px; 
+    box-sizing: border-box; 
 }
 
-.Imagen {
-    width: 50%; /* Ancho total del carrusel */
-    white-space: nowrap; /* Evitar saltos de línea */
-    overflow-x: auto; /* Habilitar desplazamiento horizontal */
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 8;
+    transition: 5s ease;
 }
 
-/* Estilos del contenido principal */
+
 main {
-    overflow: auto; /* Limpiar los flotantes */
+    overflow: auto; 
 }
 
 .product-details {
@@ -61,18 +63,17 @@ main {
     margin-top: 0;
 }
 
-.Imagen img {
-    display: inline-block; /* Mostrar las imágenes en línea */
-    margin-right: 5px; /* Espacio entre las imágenes */
-    vertical-align: center; /* Alinear las imágenes en la parte superior */
-    margin-top: 90px;
+section {
+    display: flex;
+    width: 600px;
+    height: 430px;
 }
 
-/* Estilos de la sección de comentarios */
+
 .comments {
-    clear: both; /* Limpiar los flotantes */
-    width: 100%; /* Ocupar todo el ancho disponible */
-    margin-top: 20px; /* Espacio entre la descripción y los comentarios */
+    clear: both; 
+    width: 100%;
+    margin-top: 20px;
     padding: 10px;
     border: 1px solid #070606;
     border-radius: 3px;
@@ -82,9 +83,16 @@ main {
     margin-top: 0;
 }
 
+section img:hover {
+    cursor: crosshair;
+    width: 500px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
 /* Estilos de pie de página */
 footer {
-    clear: both; /* Limpiar los flotantes */
+    clear: both; 
     text-align: center;
     background-color: #333;
     color: white;
